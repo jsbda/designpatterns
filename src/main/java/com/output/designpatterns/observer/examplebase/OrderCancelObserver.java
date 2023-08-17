@@ -1,4 +1,6 @@
-package com.output.designpatterns.observer;
+package com.output.designpatterns.observer.examplebase;
+
+import com.output.designpatterns.observer.Order;
 
 /**
  * @ClassName OrderCancelObserver

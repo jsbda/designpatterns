@@ -1,4 +1,7 @@
-package com.output.designpatterns.observer;
+package com.output.designpatterns.observer.examplebase;
+
+import com.output.designpatterns.observer.Order;
+import com.output.designpatterns.observer.StockService;
 
 /**
  * @ClassName OrderCancelStockObserver
@@ -8,7 +11,7 @@ package com.output.designpatterns.observer;
  */
 public class OrderCancelStockObserver implements OrderCancelObserver {
 
-    private StockService stockService;
+    private final StockService stockService;
 
     public OrderCancelStockObserver(final StockService stockService) {
         this.stockService = stockService;

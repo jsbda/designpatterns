@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class SMSService {
 
-    void sendSMS(final Order order) {
+    public void sendSMS(final Order order) {
         log.info("发送短信成功");
     }
 

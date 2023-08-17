@@ -1,4 +1,7 @@
-package com.output.designpatterns.observer;
+package com.output.designpatterns.observer.examplebase;
+
+import com.output.designpatterns.observer.Order;
+import com.output.designpatterns.observer.SMSService;
 
 /**
  * @ClassName OrderCancelSMSObserver
@@ -8,7 +11,7 @@ package com.output.designpatterns.observer;
  */
 public class OrderCancelSMSObserver implements OrderCancelObserver {
 
-    private SMSService smsService;
+    private final SMSService smsService;
 
     public OrderCancelSMSObserver(final SMSService smsService) {
         this.smsService = smsService;

@@ -1,4 +1,7 @@
-package com.output.designpatterns.observer;
+package com.output.designpatterns.observer.examplebase;
+
+import com.output.designpatterns.observer.AccountService;
+import com.output.designpatterns.observer.Order;
 
 /**
  * @ClassName OrderCancelAccountObserver
@@ -8,7 +11,7 @@ package com.output.designpatterns.observer;
  */
 public class OrderCancelAccountObserver implements OrderCancelObserver {
 
-    private AccountService accountService;
+    private final AccountService accountService;
 
     public OrderCancelAccountObserver(final AccountService accountService) {
         this.accountService = accountService;

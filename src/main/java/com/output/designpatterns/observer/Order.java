@@ -1,29 +1,26 @@
 package com.output.designpatterns.observer;
 
-import java.math.BigDecimal;
-
 /**
  * @ClassName Order
  * @Description
  * @Author ydh
  * @Date 2023/8/15 5:59 PM
  */
-
 public class Order {
 
     /**
      * 订单Id
      */
-    private Long orderId;
+    private final Long orderId;
 
     /**
-     * 订单状态
+     * 订单状态(0-未知，10-已创建，20-已支付，30-已取消)
      */
-    private Integer orderStatus;
+    private final Integer orderStatus;
 
-    /**
-     * 支付金额
-     */
-    private BigDecimal payAmount;
+    public Order(final Long orderId, final Integer orderStatus) {
+        this.orderId = orderId;
+        this.orderStatus = orderStatus;
+    }
 
 }
